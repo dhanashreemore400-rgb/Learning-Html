@@ -1,3 +1,11 @@
-.pdf
-images
-.jpeg
+```gitignore
+# Ignore PDF files
+*.pdf
+
+# Ignore JPEG image files
+*.jpeg
+*.jpg
+
+# Ignore the images directory
+images/
+```
