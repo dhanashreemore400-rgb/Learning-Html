@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Student Registration Form</title>
+</head>
+<body>
+
+    <center>
+        <h1>Dr. D. Y. Patil College of Engineering and Management, Pune</h1>
+        <hr>
+        <h2>Student Registration Form</h2>
+    </center>
+
+    <form action="/submit" method="POST">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div>
+                <label for="firstName">First Name:</label>
+                <input
+                    type="text"
+                    name="firstName"
+                    placeholder="First Name"
+                    required>
+            </div>
+
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last Name"
+                    required>
+            </div>
+
+            <div>
+                <label for="email">Email Address:</label>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input
+                    type="phone"
+                    name="phone"
+                    placeholder="Phone Number"
+                    required>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input
+                    type="date"
+                    name="dob"
+                    required>
+            </div>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Course Details</legend>
+
+            <div>
+                <label for="course">Interested Course:</label>
+
+                <select name="course" required>
+                    <option value="" disabled selected>Select a course</option>
+                    <option value="BCS">Bachelor of Computer Science</option>
+                    <option value="BCA">Bachelor of Computer Application</option>
+                    <option value="BCY">Bachelor of Cyber Security</option>
+                    <option value="BDS">Bachelor of Data Science</option>
+                </select>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Account Security</legend>
+
+            <div>
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                     required>
+            </div>
+
+        </fieldset>
+        <button type="submit">Complete Registration</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+</body>
+</html>
