@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Enter To Check if it's a number or not</h1><hr>
+    <h3>Enter below</h3><br>
+    <input type="text" id="input"><br>
+    <h3>Output here</h3>
+    <input type="text" readonly id="output"><br>
+    <button type="button" id="submit">Submit</button>
+
+    <script>
+        let input1 = document.querySelector('#input');
+        let output1 = document.querySelector('#output');
+        let submit1 = document.querySelector("#submit");
+
+        function checkNumber(){
+            let value = input1.value;
+            if(value.trim() !== '' && !isNaN(value)){
+                output1.value = 'it is a Number';
+            } else {
+                output1.value = 'it is not a number';
+            }
+        };
+        
+        input1.addEventListener('keydown', (event) => {
+            if(event.key === 'Enter'){
+                checkNumber();
+            }
+        })
+
+        submit1.addEventListener('click', checkNumber);
+    </script>
+</body>
+</html>
