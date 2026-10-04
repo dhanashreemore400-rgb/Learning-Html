@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>checking if it's a Number or Not</h1><hr>
+    <button onclick="alertme()">alert me</button><br>
+        <button onclick="showConfirm()">confirm me</button>
+
+    <script>
+       function alertme(){
+        alert('this is a simple alert');
+       }
+
+       function showConfirm(){
+        let response = confirm("Do you want to continue");
+        document.write(response);
+        if(response){
+            alert("you pressed yes");
+        } else {
+            alert("you pressed cancel");
+        }
+       }
+    </script>
+</body>
+</html>
